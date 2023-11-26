@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4D731DC2B46A67F00A479BB /* CapitalCompassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D731DB2B46A67F00A479BB /* CapitalCompassApp.swift */; };
+		E4D731DE2B46A67F00A479BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D731DD2B46A67F00A479BB /* ContentView.swift */; };
+		E4D731E02B46A68100A479BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D731DF2B46A68100A479BB /* Assets.xcassets */; };
+		E4D731E42B46A68100A479BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D731E32B46A68100A479BB /* Preview Assets.xcassets */; };
+		E4D731EE2B46A68100A479BB /* CapitalCompassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D731ED2B46A68100A479BB /* CapitalCompassTests.swift */; };
+		E4D731F82B46A68100A479BB /* CapitalCompassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D731F72B46A68100A479BB /* CapitalCompassUITests.swift */; };
+		E4D731FA2B46A68100A479BB /* CapitalCompassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D731F92B46A68100A479BB /* CapitalCompassUITestsLaunchTests.swift */; };
+		E4D732072B47A44C00A479BB /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D732062B47A44C00A479BB /* Gradient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4D731EA2B46A68100A479BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D731D02B46A67F00A479BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D731D72B46A67F00A479BB;
+			remoteInfo = CapitalCompass;
+		};
+		E4D731F42B46A68100A479BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D731D02B46A67F00A479BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D731D72B46A67F00A479BB;
+			remoteInfo = CapitalCompass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4D731D82B46A67F00A479BB /* CapitalCompass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapitalCompass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D731DB2B46A67F00A479BB /* CapitalCompassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalCompassApp.swift; sourceTree = "<group>"; };
+		E4D731DD2B46A67F00A479BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E4D731DF2B46A68100A479BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4D731E12B46A68100A479BB /* CapitalCompass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CapitalCompass.entitlements; sourceTree = "<group>"; };
+		E4D731E32B46A68100A479BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4D731E92B46A68100A479BB /* CapitalCompassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapitalCompassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D731ED2B46A68100A479BB /* CapitalCompassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalCompassTests.swift; sourceTree = "<group>"; };
+		E4D731F32B46A68100A479BB /* CapitalCompassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapitalCompassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D731F72B46A68100A479BB /* CapitalCompassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalCompassUITests.swift; sourceTree = "<group>"; };
+		E4D731F92B46A68100A479BB /* CapitalCompassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalCompassUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4D732062B47A44C00A479BB /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4D731D52B46A67F00A479BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D731E62B46A68100A479BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D731F02B46A68100A479BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4D731CF2B46A67F00A479BB = {
+			isa = PBXGroup;
+			children = (
+				E4D731DA2B46A67F00A479BB /* CapitalCompass */,
+				E4D731EC2B46A68100A479BB /* CapitalCompassTests */,
+				E4D731F62B46A68100A479BB /* CapitalCompassUITests */,
+				E4D731D92B46A67F00A479BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4D731D92B46A67F00A479BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4D731D82B46A67F00A479BB /* CapitalCompass.app */,
+				E4D731E92B46A68100A479BB /* CapitalCompassTests.xctest */,
+				E4D731F32B46A68100A479BB /* CapitalCompassUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4D731DA2B46A67F00A479BB /* CapitalCompass */ = {
+			isa = PBXGroup;
+			children = (
+				E4D731DB2B46A67F00A479BB /* CapitalCompassApp.swift */,
+				E4D731DD2B46A67F00A479BB /* ContentView.swift */,
+				E4D731DF2B46A68100A479BB /* Assets.xcassets */,
+				E4D731E12B46A68100A479BB /* CapitalCompass.entitlements */,
+				E4D731E22B46A68100A479BB /* Preview Content */,
+				E4D732062B47A44C00A479BB /* Gradient.swift */,
+			);
+			path = CapitalCompass;
+			sourceTree = "<group>";
+		};
+		E4D731E22B46A68100A479BB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E4D731E32B46A68100A479BB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4D731EC2B46A68100A479BB /* CapitalCompassTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4D731ED2B46A68100A479BB /* CapitalCompassTests.swift */,
+			);
+			path = CapitalCompassTests;
+			sourceTree = "<group>";
+		};
+		E4D731F62B46A68100A479BB /* CapitalCompassUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4D731F72B46A68100A479BB /* CapitalCompassUITests.swift */,
+				E4D731F92B46A68100A479BB /* CapitalCompassUITestsLaunchTests.swift */,
+			);
+			path = CapitalCompassUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4D731D72B46A67F00A479BB /* CapitalCompass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D731FD2B46A68100A479BB /* Build configuration list for PBXNativeTarget "CapitalCompass" */;
+			buildPhases = (
+				E4D731D42B46A67F00A479BB /* Sources */,
+				E4D731D52B46A67F00A479BB /* Frameworks */,
+				E4D731D62B46A67F00A479BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CapitalCompass;
+			productName = CapitalCompass;
+			productReference = E4D731D82B46A67F00A479BB /* CapitalCompass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4D731E82B46A68100A479BB /* CapitalCompassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D732002B46A68100A479BB /* Build configuration list for PBXNativeTarget "CapitalCompassTests" */;
+			buildPhases = (
+				E4D731E52B46A68100A479BB /* Sources */,
+				E4D731E62B46A68100A479BB /* Frameworks */,
+				E4D731E72B46A68100A479BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4D731EB2B46A68100A479BB /* PBXTargetDependency */,
+			);
+			name = CapitalCompassTests;
+			productName = CapitalCompassTests;
+			productReference = E4D731E92B46A68100A479BB /* CapitalCompassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4D731F22B46A68100A479BB /* CapitalCompassUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D732032B46A68100A479BB /* Build configuration list for PBXNativeTarget "CapitalCompassUITests" */;
+			buildPhases = (
+				E4D731EF2B46A68100A479BB /* Sources */,
+				E4D731F02B46A68100A479BB /* Frameworks */,
+				E4D731F12B46A68100A479BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4D731F52B46A68100A479BB /* PBXTargetDependency */,
+			);
+			name = CapitalCompassUITests;
+			productName = CapitalCompassUITests;
+			productReference = E4D731F32B46A68100A479BB /* CapitalCompassUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4D731D02B46A67F00A479BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E4D731D72B46A67F00A479BB = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					E4D731E82B46A68100A479BB = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E4D731D72B46A67F00A479BB;
+					};
+					E4D731F22B46A68100A479BB = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E4D731D72B46A67F00A479BB;
+					};
+				};
+			};
+			buildConfigurationList = E4D731D32B46A67F00A479BB /* Build configuration list for PBXProject "CapitalCompass" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4D731CF2B46A67F00A479BB;
+			productRefGroup = E4D731D92B46A67F00A479BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4D731D72B46A67F00A479BB /* CapitalCompass */,
+				E4D731E82B46A68100A479BB /* CapitalCompassTests */,
+				E4D731F22B46A68100A479BB /* CapitalCompassUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4D731D62B46A67F00A479BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D731E42B46A68100A479BB /* Preview Assets.xcassets in Resources */,
+				E4D731E02B46A68100A479BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D731E72B46A68100A479BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D731F12B46A68100A479BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4D731D42B46A67F00A479BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D731DE2B46A67F00A479BB /* ContentView.swift in Sources */,
+				E4D731DC2B46A67F00A479BB /* CapitalCompassApp.swift in Sources */,
+				E4D732072B47A44C00A479BB /* Gradient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D731E52B46A68100A479BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D731EE2B46A68100A479BB /* CapitalCompassTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D731EF2B46A68100A479BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D731FA2B46A68100A479BB /* CapitalCompassUITestsLaunchTests.swift in Sources */,
+				E4D731F82B46A68100A479BB /* CapitalCompassUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4D731EB2B46A68100A479BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4D731D72B46A67F00A479BB /* CapitalCompass */;
+			targetProxy = E4D731EA2B46A68100A479BB /* PBXContainerItemProxy */;
+		};
+		E4D731F52B46A68100A479BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4D731D72B46A67F00A479BB /* CapitalCompass */;
+			targetProxy = E4D731F42B46A68100A479BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4D731FB2B46A68100A479BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4D731FC2B46A68100A479BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E4D731FE2B46A68100A479BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CapitalCompass/CapitalCompass.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CapitalCompass/Preview Content\"";
+				DEVELOPMENT_TEAM = B9X6M24RBN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.CapitalCompass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4D731FF2B46A68100A479BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CapitalCompass/CapitalCompass.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CapitalCompass/Preview Content\"";
+				DEVELOPMENT_TEAM = B9X6M24RBN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.CapitalCompass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E4D732012B46A68100A479BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B9X6M24RBN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.CapitalCompassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapitalCompass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CapitalCompass";
+			};
+			name = Debug;
+		};
+		E4D732022B46A68100A479BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B9X6M24RBN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.CapitalCompassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapitalCompass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CapitalCompass";
+			};
+			name = Release;
+		};
+		E4D732042B46A68100A479BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B9X6M24RBN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.CapitalCompassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CapitalCompass;
+			};
+			name = Debug;
+		};
+		E4D732052B46A68100A479BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B9X6M24RBN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.CapitalCompassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CapitalCompass;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4D731D32B46A67F00A479BB /* Build configuration list for PBXProject "CapitalCompass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D731FB2B46A68100A479BB /* Debug */,
+				E4D731FC2B46A68100A479BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D731FD2B46A68100A479BB /* Build configuration list for PBXNativeTarget "CapitalCompass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D731FE2B46A68100A479BB /* Debug */,
+				E4D731FF2B46A68100A479BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D732002B46A68100A479BB /* Build configuration list for PBXNativeTarget "CapitalCompassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D732012B46A68100A479BB /* Debug */,
+				E4D732022B46A68100A479BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D732032B46A68100A479BB /* Build configuration list for PBXNativeTarget "CapitalCompassUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D732042B46A68100A479BB /* Debug */,
+				E4D732052B46A68100A479BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4D731D02B46A67F00A479BB /* Project object */;
+}
