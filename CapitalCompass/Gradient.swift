@@ -24,7 +24,12 @@ extension RadialGradient {
         ],
         center: .center, startRadius: 0, endRadius: 64)
     
-    static let gradientWaitedSteps = RadialGradient(colors: [.gray, Color(.systemGray3)], center: .center,startRadius: 0,endRadius: 64)
+    static let gradientWaitedSteps = RadialGradient(
+        colors: [
+            .gray,
+            Color(red: 0.7, green: 0.7, blue: 0.7)
+            ],
+        center: .center,startRadius: 0,endRadius: 64)
 }
 extension StrokeStyle {
     static let strokeWalk = StrokeStyle(
