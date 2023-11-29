@@ -19,10 +19,7 @@ struct ContentView: View {
                         await searchPlaces()
                     }
                 }
-            ForEach(searchResults, id: \.self) { result in
-                 Marker(item: result)
-             }
-            
+
             
 
 
