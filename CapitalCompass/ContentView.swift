@@ -6,7 +6,7 @@ struct ContentView: View {
     let buttons = [("house", "Home"), ("person", "Profile"), ("gear", "Settings"), ("questionmark.circle", "Help")]
     @State private var selectedButton = "Home"
     @State private var searchText = ""
-    @State private var searchResults = [MKMapItem]()
+    @State private var results = [MKMapItem]()
 
     var body: some View {
         ZStack {
@@ -19,9 +19,16 @@ struct ContentView: View {
                         await searchPlaces()
                     }
                 }
+<<<<<<< HEAD
 
             
+=======
+>>>>>>> parent of d2a80ea (Add search and display landmarks)
 
+            ForEach(results, id: \.self) { item in
+                let placemark = item.placemark
+                Marker(placemark.name ??  "", coordinate: placemark.coordinate)
+            }
 
             VStack {
                 Spacer()
@@ -60,19 +67,16 @@ struct ContentView: View {
             }
         }
     }
-}
 
-extension ContentView {
     func searchPlaces() async {
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = searchText
-        request.region = cameraPosition
+        request.region = .userRegion
         let response = try? await MKLocalSearch(request: request).start()
-        searchResults = response?.mapItems ?? []
-
+        self.results = response?.mapItems ?? []
     }
 }
-            
+
 extension CLLocationCoordinate2D {
     static var userLocation: CLLocationCoordinate2D {
         .init(latitude: 45.415, longitude: -75.6972)
@@ -85,4 +89,8 @@ extension MKCoordinateRegion {
     }
 }
 
-
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
