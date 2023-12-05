@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E45318982B49E3D600842833 /* SnapPagerCarousel in Frameworks */ = {isa = PBXBuildFile; productRef = E45318972B49E3D600842833 /* SnapPagerCarousel */; };
 		E4D731DC2B46A67F00A479BB /* CapitalCompassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D731DB2B46A67F00A479BB /* CapitalCompassApp.swift */; };
 		E4D731DE2B46A67F00A479BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D731DD2B46A67F00A479BB /* ContentView.swift */; };
 		E4D731E02B46A68100A479BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D731DF2B46A68100A479BB /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45318982B49E3D600842833 /* SnapPagerCarousel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +153,9 @@
 			dependencies = (
 			);
 			name = CapitalCompass;
+			packageProductDependencies = (
+				E45318972B49E3D600842833 /* SnapPagerCarousel */,
+			);
 			productName = CapitalCompass;
 			productReference = E4D731D82B46A67F00A479BB /* CapitalCompass.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = E4D731CF2B46A67F00A479BB;
+			packageReferences = (
+				E45318962B49E3D500842833 /* XCRemoteSwiftPackageReference "SnapPagerCarousel" */,
+			);
 			productRefGroup = E4D731D92B46A67F00A479BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -625,6 +633,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E45318962B49E3D500842833 /* XCRemoteSwiftPackageReference "SnapPagerCarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MaximeFILIPPI/SnapPagerCarousel";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E45318972B49E3D600842833 /* SnapPagerCarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E45318962B49E3D500842833 /* XCRemoteSwiftPackageReference "SnapPagerCarousel" */;
+			productName = SnapPagerCarousel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E4D731D02B46A67F00A479BB /* Project object */;
 }
