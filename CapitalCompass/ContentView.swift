@@ -3,7 +3,7 @@ import MapKit
 
 struct ContentView: View {
     @State private var cameraPosition: MapCameraPosition = .region(.userRegion)
-    let buttons = [("house", "Home"), ("person", "Profile"), ("gear", "Settings"), ("questionmark.circle", "Help")]
+    let buttons = [("trophy.fill", "Landmarks"), ("tree.fill", "Gardens"), ("beach.umbrella.fill", "Beaches"), ("skateboard.fill", "Skate Parks")]
     @State private var selectedButton = "Home"
     @State private var searchText = ""
     @State private var results = [MKMapItem]()
