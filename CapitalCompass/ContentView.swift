@@ -2,37 +2,31 @@ import SwiftUI
 import MapKit
 
 struct ContentView: View {
-    @State private var cameraPosition: MKCoordinateRegion = .userRegion
+    @State private var cameraPosition: MapCameraPosition = .region(.userRegion)
     let buttons = [("house", "Home"), ("person", "Profile"), ("gear", "Settings"), ("questionmark.circle", "Help")]
     @State private var selectedButton = "Home"
     @State private var searchText = ""
     @State private var results = [MKMapItem]()
-
+    
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $cameraPosition)
-                .overlay(alignment: .top) {
-                    SearchView(searchText: $searchText, icon: .constant("magnifyingglass"), placeHolder: .constant("Search Ottawa"))
-                }
-                .onSubmit(of: .text) {
-                    Task {
-                        await searchPlaces()
-                    }
-                }
-<<<<<<< HEAD
-
-            
-=======
->>>>>>> parent of d2a80ea (Add search and display landmarks)
-
-            ForEach(results, id: \.self) { item in
-                let placemark = item.placemark
-                Marker(placemark.name ??  "", coordinate: placemark.coordinate)
+            Map(position: $cameraPosition)
+            .mapControls {
+                MapCompass()
+                MapUserLocationButton()
             }
-
+            .overlay(alignment: .top) {
+                SearchView(searchText: $searchText, icon: .constant("magnifyingglass"), placeHolder: .constant("Search Ottawa"))
+            }
+            .onSubmit(of: .text){
+                print("search \(searchText)")
+                Task {
+                    await searchPlaces()
+                }
+            }
+            
             VStack {
                 Spacer()
-
                 HStack(spacing: 0) {
                     ForEach(buttons, id: \.1) { (icon, title) in
                         Button(action: {
@@ -53,9 +47,9 @@ struct ContentView: View {
                             }
                             .foregroundStyle(.white)
                             .background(
-                                RadialGradient(gradient: Gradient(colors: [.blue, .purple]), center: .center, startRadius: 20, endRadius: 100)
+                                RadialGradient.gradientDoneSteps
                             )
-                            .clipShape(RoundedRectangle(cornerRadius: 14))
+                            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 14, height: 14)))
                             .shadow(color: .primary.opacity(0.7), radius: 2, x: 0, y: 2)
                             .scaleEffect(0.8)
                             .offset(y: 14)
@@ -67,13 +61,15 @@ struct ContentView: View {
             }
         }
     }
+}
 
+extension ContentView {
     func searchPlaces() async {
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = searchText
         request.region = .userRegion
-        let response = try? await MKLocalSearch(request: request).start()
-        self.results = response?.mapItems ?? []
+        let searchResponse = try? await MKLocalSearch(request: request).start()
+        self.results = searchResponse?.mapItems ?? []
     }
 }
 
