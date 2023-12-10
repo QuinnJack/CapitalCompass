@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		E45318982B49E3D600842833 /* SnapPagerCarousel in Frameworks */ = {isa = PBXBuildFile; productRef = E45318972B49E3D600842833 /* SnapPagerCarousel */; };
 		E453189A2B49E4DE00842833 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45318992B49E4DE00842833 /* MapView.swift */; };
+		E453189E2B49E9A000842833 /* LandmarkMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E453189D2B49E9A000842833 /* LandmarkMapView.swift */; };
+		E45318A02B49E9D200842833 /* GardenMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E453189F2B49E9D200842833 /* GardenMapView.swift */; };
+		E45318A22B49EAAC00842833 /* BeachMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45318A12B49EAAC00842833 /* BeachMapView.swift */; };
+		E45318A42B49EAE700842833 /* SkateParkMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45318A32B49EAE700842833 /* SkateParkMapView.swift */; };
 		E4D731DC2B46A67F00A479BB /* CapitalCompassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D731DB2B46A67F00A479BB /* CapitalCompassApp.swift */; };
 		E4D731DE2B46A67F00A479BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D731DD2B46A67F00A479BB /* ContentView.swift */; };
 		E4D731E02B46A68100A479BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D731DF2B46A68100A479BB /* Assets.xcassets */; };
@@ -39,6 +43,10 @@
 
 /* Begin PBXFileReference section */
 		E45318992B49E4DE00842833 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E453189D2B49E9A000842833 /* LandmarkMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkMapView.swift; sourceTree = "<group>"; };
+		E453189F2B49E9D200842833 /* GardenMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenMapView.swift; sourceTree = "<group>"; };
+		E45318A12B49EAAC00842833 /* BeachMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachMapView.swift; sourceTree = "<group>"; };
+		E45318A32B49EAE700842833 /* SkateParkMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkateParkMapView.swift; sourceTree = "<group>"; };
 		E4D731D82B46A67F00A479BB /* CapitalCompass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapitalCompass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D731DB2B46A67F00A479BB /* CapitalCompassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalCompassApp.swift; sourceTree = "<group>"; };
 		E4D731DD2B46A67F00A479BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +113,10 @@
 			children = (
 				E4D731DB2B46A67F00A479BB /* CapitalCompassApp.swift */,
 				E45318992B49E4DE00842833 /* MapView.swift */,
+				E453189D2B49E9A000842833 /* LandmarkMapView.swift */,
+				E453189F2B49E9D200842833 /* GardenMapView.swift */,
+				E45318A12B49EAAC00842833 /* BeachMapView.swift */,
+				E45318A32B49EAE700842833 /* SkateParkMapView.swift */,
 				E4D731DD2B46A67F00A479BB /* ContentView.swift */,
 				E4D731DF2B46A68100A479BB /* Assets.xcassets */,
 				E4D731E12B46A68100A479BB /* CapitalCompass.entitlements */,
@@ -277,8 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D732092B47D08400A479BB /* SearchView.swift in Sources */,
+				E45318A22B49EAAC00842833 /* BeachMapView.swift in Sources */,
+				E45318A02B49E9D200842833 /* GardenMapView.swift in Sources */,
+				E45318A42B49EAE700842833 /* SkateParkMapView.swift in Sources */,
 				E4D731DE2B46A67F00A479BB /* ContentView.swift in Sources */,
 				E453189A2B49E4DE00842833 /* MapView.swift in Sources */,
+				E453189E2B49E9A000842833 /* LandmarkMapView.swift in Sources */,
 				E4D731DC2B46A67F00A479BB /* CapitalCompassApp.swift in Sources */,
 				E4D732072B47A44C00A479BB /* Gradient.swift in Sources */,
 			);
