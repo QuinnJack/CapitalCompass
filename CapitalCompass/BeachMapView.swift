@@ -69,6 +69,8 @@ struct BeachView: View {
             }.frame(maxHeight: 100)
             
         }
+        .navigationBarBackButtonHidden(true)
+
         .onChange(of: selectedPlace ?? defaultPlace) { oldValue, newValue in
             
             self.centerMapOnPlace(place: newValue)
@@ -247,7 +249,20 @@ struct BeachCardView: View {
         )
         
     }
-    
+    struct TransparentNavigationBar: ViewModifier {
+        func body(content: Content) -> some View {
+            content
+                .navigationBarTitleDisplayMode(.inline)
+                .onAppear {
+                    let appearance = UINavigationBarAppearance()
+                    appearance.configureWithTransparentBackground()
+                    UINavigationBar.appearance().standardAppearance = appearance
+                    UINavigationBar.appearance().compactAppearance = appearance
+                    UINavigationBar.appearance().scrollEdgeAppearance = appearance
+                }
+        }
+    }
+
 }
 
 
