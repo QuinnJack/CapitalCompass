@@ -23,7 +23,6 @@ struct LandmarkView: View {
 
     let defaultPlace = Place(name: "", desc: "", icon: "", color: .red, latitude: 0, longitude:0, pictureURL: "")
     
-    // Kōtō city, Central Tokyo location
     @State private var cameraPosition: MapCameraPosition = .automatic
     
     // Our items for Map and SnapCarousel
@@ -87,73 +86,64 @@ struct LandmarkView: View {
     
     func loadPlaces()
     {
-        // Need data
         
-        places = [
+            places = [
+                    
+                Place(name: "Parliament Hill",
+                      desc: "Iconic site of Canada's federal government, featuring grand architecture, historic sculptures, and expansive grounds.",
+                      icon: "flag.fill",
+                      color: .red,
+                      latitude: 45.4251,
+                      longitude: -75.6998,
+                      pictureURL: "https://www.acec.ca/images/Advocacy/05Parlim/HillGood.jpg"),
                 
-            Place(name: "Odaiba Seaside Park",
-                  desc: "Coastal green space with views of the Rainbow Bridge & city, plus paths & a small Statue of Liberty.",
-                  icon: "figure.and.child.holdinghands",
-                  color: .blue,
-                  latitude: 35.6281,
-                  longitude: 139.7736,
-                  pictureURL: "https://lh3.googleusercontent.com/p/AF1QipM_9s8UCiGEkMfOB0zzgoPSXvbeBQVIWz6FA_ut=s1360-w1360-h1020"),
-            
-            
-            Place(name: "Tokyo Big Sight",
-                  desc: "Convention and exhibition center in Tokyo, Japan, and the largest one in the country.",
-                  icon: "globe",
-                  color: .brown,
-                  latitude: 35.6308,
-                  longitude: 139.7942,
-                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d1/20030727_27_July_2003_Tokyo_International_Exhibition_Center_Big_Sight_Odaiba_Tokyo_Japan.jpg"),
-            
-        
-            Place(name: "Aomi Urban Sports Park",
-                  desc: "Temporary venue and park in the Aomi district in the Tokyo Bay Zone",
-                  icon: "figure.climbing",
-                  color: .green,
-                  latitude: 35.6330,
-                  longitude: 139.7926,
-                  pictureURL: "https://media.gettyimages.com/id/1210700393/photo/a-general-view-of-the-venue-during-the-sports-climbing-tokyo-2020-olympic-test-event-at-the.jpg?s=612x612&w=gi&k=20&c=V6umi1b_JEDblDGEb06Smaqw5HQNBGlAz_8fjSl0ggk="),
-            
-        
-            Place(name: "Aqua City Odaiba",
-                  desc: "large complex shopping center located next to Odaiba Marine Park which boasts a great location where you can see the center of Tokyo metropolis over the Statue of Liberty and the Rainbow Bridge.",
-                  icon: "drop.halffull",
-                  color: .cyan,
-                  latitude: 35.6258,
-                  longitude: 139.7769,
-                  pictureURL: "https://c8.alamy.com/comp/2BW110T/aqua-city-mall-with-odaiba-fuji-building-behind-on-a-sunny-day-tokyo-japan-2BW110T.jpg"),
-            
-        
-            Place(name: "Miraikan (National Museum of Emerging Science and Innovation)",
-                  desc: "National Museum of Emerging Science and Innovation, simply known as the Miraikan, is a museum created by Japan's Science and Technology Agency.",
-                  icon: "graduationcap.fill",
-                  color: .red,
-                  latitude: 35.6214,
-                  longitude: 139.7796,
-                  pictureURL: "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/relinvmpqstko4nxngei/NationalMuseumofEmergingScienceandInnovation(Miraikan)AdmissionTicket.webp"),
-        
-        
-            Place(name: "Palette Town Ferris Wheel",
-                  desc: "Amusement ride, known as “Palette Town Daikanransha,” has been lit up in a special illumination every night.",
-                  icon: "fireworks",
-                  color: .purple,
-                  latitude: 35.6295,
-                  longitude: 139.7762,
-                  pictureURL: "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000132/img/en/a0000132_parts_57b5957b6d955.jpg"),
-            
-        
-            Place(name: "DiverCity Tokyo",
-                  desc: "This park values Japan's unique view of nature and strives to maintain its natural beauty. If you're looking for a place to relax and recharge, this park is for you. It is also a place where children can have a lot of fun.",
-                  icon: "music.mic",
-                  color: .indigo,
-                  latitude: 35.6256,
-                  longitude: 139.7736,
-                  pictureURL: "https://amazingthaisea.com/wp-content/uploads/2015/10/Diver-City-Tokyo-Plaza.jpg"),
+                Place(name: "National Gallery of Canada",
+                    desc: "Spectacular glass and granite museum featuring Canadian & indigenous art plus international works.",
+                    icon: "theatermask.and.paintbrush.fill",
+                    color: .purple,
+                    latitude: 45.4295,
+                    longitude: -75.6989,
+                    pictureURL: "https://safdie-staging.imgix.net/0020fdc8-4900-4e3e-a0db-bcfd7372f539/01_B-F_NGC_E226_4x3.jpg?q=50&ixlib=imgixjs-3.6.1"),
+
+
+                Place(name: "ByWard Market",
+                    desc: "A buzzing hub of outdoor market stalls, specialty food shops, bars, restaurants & galleries.",
+                      icon: "bag.fill",
+                      color: .yellow,
+                      latitude: 45.42771,
+                      longitude: -75.692340,
+                      pictureURL: "https://images.squarespace-cdn.com/content/v1/60bed59745a00c322d46a862/77346695-8b4b-40c3-be2f-ba8eddeaf0e1/BYWARD+STOCK-resized.jpg"),
                 
-        ]
+            
+                Place(name: "Rideau Canal",
+                    desc: "Historic waterway filled with boats in the summer & turned into the world's largest skating rink in winter.",
+                      icon: "water.waves",
+                      color: .blue,
+                      latitude: 45.426694,
+                      longitude: -75.670513,
+                      pictureURL: "https://media.gettyimages.com/id/1210700393/photo/a-general-view-of-the-venue-during-the-sports-climbing-tokyo-2020-olympic-test-event-at-the.jpg?s=612x612&w=gi&k=20&c=V6umi1b_JEDblDGEb06Smaqw5HQNBGlAz_8fjSl0ggk="),
+                
+            
+                Place(name: "University of Ottawa",
+                    desc: "A major bilingual public research university in the heart of Ottawa, known for its diverse programs, cutting-edge research, and vibrant campus life.",
+                      icon: "graduationcap.fill",
+                      color: .red,
+                      latitude: 45.425161,
+                      longitude: -75.684183,
+                      pictureURL: "https://c8.alamy.com/comp/2BW110T/aqua-city-mall-with-odaiba-fuji-building-behind-on-a-sunny-day-tokyo-japan-2BW110T.jpg"),
+                
+            
+                    Place(name: "Canadian War Museum",
+                    desc: "A modern museum exploring Canada's international conflicts, especially those involving Canada, with artifacts, vehicles & more.",
+                    icon: "figure.fencing",
+                    color: .orange,
+                    latitude: 45.4171,
+                    longitude: -75.7169,
+                    pictureURL: "https://media.gettyimages.com/id/1210700393/photo/a-general-view-of-the-venue-during-the-sports-climbing-tokyo-2020-olympic-test-event-at-the.jpg?s=612x612&w=gi&k=20&c=V6umi1b_JEDblDGEb06Smaqw5HQNBGlAz_8fjSl0ggk="),
+            
+
+                    
+            ]
         
         
         // Calculate the region that encompasses all the places
@@ -269,5 +259,5 @@ struct LandmarkCardView: View {
 
 
 #Preview {
-    ExampleMapView()
+    LandmarkView()
 }
