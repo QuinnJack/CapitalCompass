@@ -91,67 +91,209 @@ struct SkateParkView: View {
         
         places = [
                 
-            Place(name: "Odaiba Seaside Park",
-                  desc: "Coastal green space with views of the Rainbow Bridge & city, plus paths & a small Statue of Liberty.",
-                  icon: "figure.and.child.holdinghands",
-                  color: .blue,
-                  latitude: 35.6281,
-                  longitude: 139.7736,
-                  pictureURL: "https://lh3.googleusercontent.com/p/AF1QipM_9s8UCiGEkMfOB0zzgoPSXvbeBQVIWz6FA_ut=s1360-w1360-h1020"),
-            
-            
-            Place(name: "Tokyo Big Sight",
-                  desc: "Convention and exhibition center in Tokyo, Japan, and the largest one in the country.",
-                  icon: "globe",
-                  color: .brown,
-                  latitude: 35.6308,
-                  longitude: 139.7942,
-                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d1/20030727_27_July_2003_Tokyo_International_Exhibition_Center_Big_Sight_Odaiba_Tokyo_Japan.jpg"),
-            
-        
-            Place(name: "Aomi Urban Sports Park",
-                  desc: "Temporary venue and park in the Aomi district in the Tokyo Bay Zone",
-                  icon: "figure.climbing",
-                  color: .green,
-                  latitude: 35.6330,
-                  longitude: 139.7926,
-                  pictureURL: "https://media.gettyimages.com/id/1210700393/photo/a-general-view-of-the-venue-during-the-sports-climbing-tokyo-2020-olympic-test-event-at-the.jpg?s=612x612&w=gi&k=20&c=V6umi1b_JEDblDGEb06Smaqw5HQNBGlAz_8fjSl0ggk="),
-            
-        
-            Place(name: "Aqua City Odaiba",
-                  desc: "large complex shopping center located next to Odaiba Marine Park which boasts a great location where you can see the center of Tokyo metropolis over the Statue of Liberty and the Rainbow Bridge.",
-                  icon: "drop.halffull",
-                  color: .cyan,
-                  latitude: 35.6258,
-                  longitude: 139.7769,
-                  pictureURL: "https://c8.alamy.com/comp/2BW110T/aqua-city-mall-with-odaiba-fuji-building-behind-on-a-sunny-day-tokyo-japan-2BW110T.jpg"),
-            
-        
-            Place(name: "Miraikan (National Museum of Emerging Science and Innovation)",
-                  desc: "National Museum of Emerging Science and Innovation, simply known as the Miraikan, is a museum created by Japan's Science and Technology Agency.",
-                  icon: "graduationcap.fill",
-                  color: .red,
-                  latitude: 35.6214,
-                  longitude: 139.7796,
-                  pictureURL: "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/relinvmpqstko4nxngei/NationalMuseumofEmergingScienceandInnovation(Miraikan)AdmissionTicket.webp"),
-        
-        
-            Place(name: "Palette Town Ferris Wheel",
-                  desc: "Amusement ride, known as “Palette Town Daikanransha,” has been lit up in a special illumination every night.",
-                  icon: "fireworks",
-                  color: .purple,
-                  latitude: 35.6295,
-                  longitude: 139.7762,
-                  pictureURL: "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000132/img/en/a0000132_parts_57b5957b6d955.jpg"),
-            
-        
-            Place(name: "DiverCity Tokyo",
-                  desc: "This park values Japan's unique view of nature and strives to maintain its natural beauty. If you're looking for a place to relax and recharge, this park is for you. It is also a place where children can have a lot of fun.",
-                  icon: "music.mic",
-                  color: .indigo,
-                  latitude: 35.6256,
-                  longitude: 139.7736,
-                  pictureURL: "https://amazingthaisea.com/wp-content/uploads/2015/10/Diver-City-Tokyo-Plaza.jpg"),
+            Place(name: "Lansdowne Park",
+                  desc: "Flat asphalt surface",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.40037262273225,
+                  longitude: -75.68119350047425,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Trillium Park",
+                  desc: "Flat asphalt surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.43644177724204,
+                  longitude: -75.60115841374767,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Richcraft Recreation Complex - Kanata",
+                  desc: "Large concrete bowl, 10 plus components, many street and vertical components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.341256245245944,
+                  longitude: -75.9311228794333,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Diamond Jubilee Park",
+                  desc: "Flat asphalt surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.314086718089364,
+                  longitude: -75.6095163095067,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Greely Village Park",
+                  desc: "Flat concrete surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.265433080944035,
+                  longitude: -75.55306585006588,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Berrigan Park",
+                  desc: "Flat concrete surface, 10 plus components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.27569600450156,
+                  longitude: -75.74734879410273,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Centennial Park",
+                  desc: "Flat asphalt surface, 8 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.22266136351534,
+                  longitude: -75.68674621451918,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Deevy Pines Park",
+                  desc: "Flat asphalt surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.290758029556564,
+                  longitude: -75.85700981224976,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Eccolands Park",
+                  desc: "Flat surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.315355581350225,
+                  longitude: -75.69539230060114,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Malvern Park",
+                  desc: "Flat surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.280622216608066,
+                  longitude: -75.76023525531251,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Metcalfe Community Centre",
+                  desc: "Flat surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.2303256185616,
+                  longitude: -75.46856164210584,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Walter Baker Park",
+                  desc: "Concrete bowl, 7,000 sq ft",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.29501437996668,
+                  longitude: -75.89861059991955,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Leslie Armstrong Park and Bearbrook Community Hall",
+                  desc: "Flat asphalt surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.38332153644999,
+                  longitude: -75.33729877343951,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Doug Thompson Pathway",
+                  desc: "Flat surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.14411741679804,
+                  longitude: -75.61144893063593,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Alexander Grove Park",
+                  desc: "Flat surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.26065977494502,
+                  longitude: -75.92665136688457,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Andy Shields Park",
+                  desc: "Flat surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.26135398597832,
+                  longitude: -75.55697850271004,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Fitzroy Harbour Community Centre and Campbell Bicentennial Park",
+                  desc: "Flat surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.470459865784335,
+                  longitude: -76.20608770798111,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Constance Buckham's Bay Community Centre Park",
+                  desc: "Flat asphalt surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.499050061634904,
+                  longitude: -76.0924495731868,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Vista Park",
+                  desc: "Flat surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.45039104418817,
+                  longitude: -75.47100392241148,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "McNabb Park",
+                  desc: "Flat concrete surface, 10 plus components (large half pipe), City run learn to skateboard programs, City run skateboard camps in summer",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.408488356977294,
+                  longitude: -75.70362249994423,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Eugène Martineau Park - (FUTURE)",
+                  desc: "Flat surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.450696285065774,
+                  longitude: -75.6320309678306,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Westboro Kiwanis Park",
+                  desc: "Double half-pipe",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.38359281644615,
+                  longitude: -75.7529312459768,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Rouncey Park",
+                  desc: "Flat surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.27540535796516,
+                  longitude: -75.8809528511642,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Greenboro Skateboard Park",
+                  desc: "Flat asphalt surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.37540158721022,
+                  longitude: -75.62599613156597,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Bob MacQuarrie Recreation Complex - Orléans",
+                  desc: "Flat asphalt surface, 10 components, City run learn to skateboard programs, City run skateboard camps in summer",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.467134581776655,
+                  longitude: -75.54651808655379,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Osgoode Community Centre",
+                  desc: "Flat surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.14664909376471,
+                  longitude: -75.60150415104602,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Blackburn Park",
+                  desc: "Flat asphalt surface, 5 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.429643413290826,
+                  longitude: -75.56279692044968,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "Legacy Skate Park",
+                  desc: "Large concrete bowl, many street and vertical components, 17,000 sq ft",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.34556666922493,
+                  longitude: -75.76093333252653,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
+            Place(name: "CARDELREC Recreation Complex (Goulbourn)",
+                  desc: "Flat asphalt surface, 6 components",
+                  icon: "skateboard.fill",
+                  color: .pink,
+                  latitude: 45.262228609888595,
+                  longitude: -75.90710869484667,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852"),
                 
         ]
         
@@ -206,29 +348,14 @@ struct SkateParkCardView: View {
     
     var body: some View {
         
-        ZStack
-        {
-            HStack{
-                
-                AsyncImage(url: URL(string: place.pictureURL)! ){ image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                } placeholder: {
-                    Color.gray
-                }
-                .scaledToFill()
-                .frame(width: 65, height: 65)
-                .clipped()
-                .clipShape(RoundedRectangle(cornerRadius: 8))
-                
-                VStack(alignment:.leading, spacing: 8)
-                {
+        ZStack {
+            HStack {
+                VStack(alignment:.leading, spacing: 8) {
                     Text(place.name)
                         .font(.subheadline)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading)
-                        .lineLimit(1)
+                        .lineLimit(2)
                     
                     Text(place.desc)
                         .font(.caption)
@@ -236,11 +363,9 @@ struct SkateParkCardView: View {
                         .lineLimit(2)
                 }
                 .padding(.leading, 8)
-                
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .leading)
-            
         }
         .frame(height: 100)
         .background(
@@ -267,5 +392,5 @@ struct SkateParkCardView: View {
 
 
 #Preview {
-    ExampleMapView()
+    SkateParkView()
 }

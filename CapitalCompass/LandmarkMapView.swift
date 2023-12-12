@@ -18,10 +18,9 @@ struct LandmarkPlace: Hashable {
     var pictureURL: String
     
 }
-
 struct LandmarkView: View {
 
-    let defaultPlace = Place(name: "", desc: "", icon: "", color: .red, latitude: 0, longitude:0, pictureURL: "")
+    let defaultPlace = Place(name: "", desc: "", icon: "", color: .red, latitude: 45.415, longitude:-75.6972, pictureURL: "")
     
     @State private var cameraPosition: MapCameraPosition = .automatic
     
@@ -108,7 +107,7 @@ struct LandmarkView: View {
 
                 Place(name: "ByWard Market",
                     desc: "A buzzing hub of outdoor market stalls, specialty food shops, bars, restaurants & galleries.",
-                      icon: "bag.fill",
+                      icon: "dollarsign",
                       color: .yellow,
                       latitude: 45.42771,
                       longitude: -75.692340,
