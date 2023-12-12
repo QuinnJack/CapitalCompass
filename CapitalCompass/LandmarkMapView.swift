@@ -20,7 +20,7 @@ struct LandmarkPlace: Hashable {
 }
 struct LandmarkView: View {
 
-    let defaultPlace = Place(name: "", desc: "", icon: "", color: .red, latitude: 45.415, longitude:-75.6972, pictureURL: "")
+    let defaultPlace = Place(name: "", desc: "", icon: "", color: .red, latitude: 45.4251, longitude:-75.6998, pictureURL: "")
     
     @State private var cameraPosition: MapCameraPosition = .automatic
     
@@ -139,9 +139,41 @@ struct LandmarkView: View {
                     latitude: 45.4171,
                     longitude: -75.7169,
                     pictureURL: "https://media.gettyimages.com/id/1210700393/photo/a-general-view-of-the-venue-during-the-sports-climbing-tokyo-2020-olympic-test-event-at-the.jpg?s=612x612&w=gi&k=20&c=V6umi1b_JEDblDGEb06Smaqw5HQNBGlAz_8fjSl0ggk="),
-            
+                
+                Place(name: "Rideau Canal Locks",
+                         desc: "A series of locks at the mouth of the Rideau Canal in Ottawa, offering picturesque views and a glimpse into the canal's engineering marvel.",
+                         icon: "lock.fill",
+                         color: .cyan,
+                         latitude: 45.4255,
+                         longitude: -75.6955,
+                         pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Rideau_Canal.jpg"),
 
-                    
+                Place(name: "Canadian War Memorial",
+                        desc: "A national historic site and a symbol of remembrance, honoring Canadians who served in wars and military missions around the world.",
+                        icon: "suit.club.fill",
+                        color: .black,
+                        latitude: 45.4236,
+                        longitude: -75.6955,
+                        pictureURL: "https://www.hilltimes.com/wp-content/uploads/2023/02/568A0103_18.t63c6cd88.m2048@0.xRDOzz5ue-e1675718958418.jpg"),
+                
+                Place(name: "Confederation Park",
+                      desc: "A serene urban park in downtown Ottawa, known for its beautiful sculptures, memorials, and hosting various festivals and events.",
+                      icon: "tree.fill",
+                      color: .green,
+                      latitude: 45.4215,
+                      longitude: -75.6989,
+                      pictureURL: "https://ncc-website-2.s3.amazonaws.com/images/_1200x630_crop_center-center_82_none/IMG_5507-1.jpg?mtime=1610475458"),
+                
+
+                Place(name: "Royal Canadian Mint",
+                      desc: "Historic site where Canadian coins are produced, offering guided tours to showcase the minting process and unique collectibles.",
+                      icon: "dollarsign.arrow.circlepath",
+                      color: .orange,
+                      latitude: 45.43115,
+                      longitude: -75.699377,
+                      pictureURL: "https://exampleurl.com/royal_canadian_mint.jpg"),
+
+
             ]
         
         

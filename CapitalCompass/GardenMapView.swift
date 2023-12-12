@@ -727,29 +727,14 @@ struct GardenCardView: View {
     
     var body: some View {
         
-        ZStack
-        {
-            HStack{
-                
-                AsyncImage(url: URL(string: place.pictureURL)! ){ image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                } placeholder: {
-                    Color.gray
-                }
-                .scaledToFill()
-                .frame(width: 65, height: 65)
-                .clipped()
-                .clipShape(RoundedRectangle(cornerRadius: 8))
-                
-                VStack(alignment:.leading, spacing: 8)
-                {
+        ZStack {
+            HStack {
+                VStack(alignment:.leading, spacing: 8) {
                     Text(place.name)
                         .font(.subheadline)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading)
-                        .lineLimit(3)
+                        .lineLimit(2)
                     
                     Text(place.desc)
                         .font(.caption)
@@ -757,13 +742,10 @@ struct GardenCardView: View {
                         .lineLimit(2)
                 }
                 .padding(.leading, 8)
-                
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .leading)
-            
         }
-        
         .frame(height: 100)
         .background(
             RoundedRectangle(cornerRadius: 16)

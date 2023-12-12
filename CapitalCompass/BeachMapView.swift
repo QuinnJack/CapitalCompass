@@ -91,67 +91,43 @@ struct BeachView: View {
         
         places = [
                 
-            Place(name: "Odaiba Seaside Park",
-                  desc: "Coastal green space with views of the Rainbow Bridge & city, plus paths & a small Statue of Liberty.",
-                  icon: "figure.and.child.holdinghands",
+            Place(name: "Petrie Island River Beaches",
+                  desc: "Ottawa’s newest beach offers a wonderful expanse of views and sand across the Ottawa River. Key amenities include washrooms; pay parking (7 am to 6 pm); an interpretation cottage; and 12 picnic tables",
+                  icon: "water.waves",
                   color: .blue,
-                  latitude: 35.6281,
-                  longitude: 139.7736,
-                  pictureURL: "https://lh3.googleusercontent.com/p/AF1QipM_9s8UCiGEkMfOB0zzgoPSXvbeBQVIWz6FA_ut=s1360-w1360-h1020"),
+                  latitude: 45.50677311004009,
+                  longitude: -75.49022471820163,
+                  pictureURL: "https://img1.wsimg.com/isteam/ip/3f0adf0b-a810-464f-a8a3-84f82bf505ac/20210517_170345.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1280"),
             
             
-            Place(name: "Tokyo Big Sight",
-                  desc: "Convention and exhibition center in Tokyo, Japan, and the largest one in the country.",
-                  icon: "globe",
-                  color: .brown,
-                  latitude: 35.6308,
-                  longitude: 139.7942,
-                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/d/d1/20030727_27_July_2003_Tokyo_International_Exhibition_Center_Big_Sight_Odaiba_Tokyo_Japan.jpg"),
-            
-        
-            Place(name: "Aomi Urban Sports Park",
-                  desc: "Temporary venue and park in the Aomi district in the Tokyo Bay Zone",
-                  icon: "figure.climbing",
-                  color: .green,
-                  latitude: 35.6330,
-                  longitude: 139.7926,
-                  pictureURL: "https://media.gettyimages.com/id/1210700393/photo/a-general-view-of-the-venue-during-the-sports-climbing-tokyo-2020-olympic-test-event-at-the.jpg?s=612x612&w=gi&k=20&c=V6umi1b_JEDblDGEb06Smaqw5HQNBGlAz_8fjSl0ggk="),
-            
-        
-            Place(name: "Aqua City Odaiba",
-                  desc: "large complex shopping center located next to Odaiba Marine Park which boasts a great location where you can see the center of Tokyo metropolis over the Statue of Liberty and the Rainbow Bridge.",
-                  icon: "drop.halffull",
+            Place(name: "Westboro Beach",
+                  desc: "A key hub on the Ottawa side of the historic Ottawa River covered by the Ottawa River South Shore Riverfront Park Plan",
+                  icon: "beach.umbrella.fill",
                   color: .cyan,
-                  latitude: 35.6258,
-                  longitude: 139.7769,
-                  pictureURL: "https://c8.alamy.com/comp/2BW110T/aqua-city-mall-with-odaiba-fuji-building-behind-on-a-sunny-day-tokyo-japan-2BW110T.jpg"),
+                  latitude: 45.39539726009651,
+                  longitude: -75.76127098678396,
+                  pictureURL: "https://s3.amazonaws.com/cdn.swimdrinkfishguide.com/photos/97431b3321d3e2b85a6b60c1f298a327b8244507.jpg?assetVersion=1690304438088"),
             
         
-            Place(name: "Miraikan (National Museum of Emerging Science and Innovation)",
-                  desc: "National Museum of Emerging Science and Innovation, simply known as the Miraikan, is a museum created by Japan's Science and Technology Agency.",
-                  icon: "graduationcap.fill",
-                  color: .red,
-                  latitude: 35.6214,
-                  longitude: 139.7796,
-                  pictureURL: "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/relinvmpqstko4nxngei/NationalMuseumofEmergingScienceandInnovation(Miraikan)AdmissionTicket.webp"),
-        
-        
-            Place(name: "Palette Town Ferris Wheel",
-                  desc: "Amusement ride, known as “Palette Town Daikanransha,” has been lit up in a special illumination every night.",
-                  icon: "fireworks",
+            Place(name: "Britannia Beach",
+                  desc: "Large, spacious beach, picnic pavilions, and a children's playground with one of the city's bike trails also running through the park",
+                  icon: "figure.pool.swim",
                   color: .purple,
-                  latitude: 35.6295,
-                  longitude: 139.7762,
-                  pictureURL: "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000132/img/en/a0000132_parts_57b5957b6d955.jpg"),
+                  latitude: 45.36507331981652,
+                  longitude: -75.80151267553116,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/7/77/BritanniaBeach.jpg"),
             
         
-            Place(name: "DiverCity Tokyo",
-                  desc: "This park values Japan's unique view of nature and strives to maintain its natural beauty. If you're looking for a place to relax and recharge, this park is for you. It is also a place where children can have a lot of fun.",
-                  icon: "music.mic",
-                  color: .indigo,
-                  latitude: 35.6256,
-                  longitude: 139.7736,
-                  pictureURL: "https://amazingthaisea.com/wp-content/uploads/2015/10/Diver-City-Tokyo-Plaza.jpg"),
+            Place(name: "Mooney's Bay Beach",
+                  desc: "This public park has a beach, picnic areas, a children's playground, the Sue Holloway Fitness Park, and is the site of the Terry Fox Stadium.",
+                  icon: "sailboat.fill",
+                  color: .blue,
+                  latitude: 45.36684363443651,
+                  longitude: -75.69267844341542,
+                  pictureURL: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mooneys-bay-beach.jpg"),
+            
+        
+           
                 
         ]
         
@@ -267,5 +243,5 @@ struct BeachCardView: View {
 
 
 #Preview {
-    ExampleMapView()
+    BeachView()
 }
