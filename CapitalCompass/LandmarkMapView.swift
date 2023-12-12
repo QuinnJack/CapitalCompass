@@ -99,7 +99,7 @@ struct LandmarkView: View {
                 Place(name: "National Gallery of Canada",
                     desc: "Spectacular glass and granite museum featuring Canadian & indigenous art plus international works.",
                     icon: "theatermask.and.paintbrush.fill",
-                    color: .purple,
+                    color: .indigo,
                     latitude: 45.4295,
                     longitude: -75.6989,
                     pictureURL: "https://safdie-staging.imgix.net/0020fdc8-4900-4e3e-a0db-bcfd7372f539/01_B-F_NGC_E226_4x3.jpg?q=50&ixlib=imgixjs-3.6.1"),
@@ -126,7 +126,7 @@ struct LandmarkView: View {
                 Place(name: "University of Ottawa",
                     desc: "A major bilingual public research university in the heart of Ottawa, known for its diverse programs, cutting-edge research, and vibrant campus life.",
                       icon: "graduationcap.fill",
-                      color: .red,
+                      color: .pink,
                       latitude: 45.425161,
                       longitude: -75.684183,
                       pictureURL: "https://c8.alamy.com/comp/2BW110T/aqua-city-mall-with-odaiba-fuji-building-behind-on-a-sunny-day-tokyo-japan-2BW110T.jpg"),
@@ -171,9 +171,23 @@ struct LandmarkView: View {
                       color: .orange,
                       latitude: 45.43115,
                       longitude: -75.699377,
-                      pictureURL: "https://exampleurl.com/royal_canadian_mint.jpg"),
+                      pictureURL: "https://www.mint.ca/globalassets/about/visit-the-mint/ottawa_location_2x.png?hash=637661082100000000"),
 
+                Place(name: "Carleton University",
+                      desc: "A dynamic research and teaching institution dedicated to achieving the highest standards of scholarship, located on a beautiful campus in the heart of Ottawa.",
+                      icon: "book.fill",
+                      color: .red,
+                      latitude: 45.387581,
+                      longitude: -75.696020,
+                      pictureURL: "https://carleton.ca/chancellor/wp-content/uploads/carleton-university-skyview-sept-2020-1600w-2.jpg"),
 
+                Place(name: "Lansdowne Park",
+                      desc: "A historic and vibrant area in Ottawa offering a mix of sporting and cultural events, a public park, a farmers' market, and retail establishments.",
+                      icon: "figure.american.football",
+                      color: .teal,
+                      latitude: 45.396221,
+                      longitude: -75.683107,
+                      pictureURL: "https://i.cbc.ca/1.6443949.1682459607!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/oseg-lansdowne-park-2-0-redevelopment-aerial-view-rendering-ottawa.jpg")
             ]
         
         
