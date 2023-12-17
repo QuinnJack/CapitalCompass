@@ -20,8 +20,13 @@ struct LandmarkPlace: Hashable {
 }
 struct LandmarkView: View {
 
-    let defaultPlace = Place(name: "", desc: "", icon: "", color: .red, latitude: 45.4251, longitude:-75.6998, pictureURL: "")
-    
+    let defaultPlace = Place(name: "Parliament Hill",
+                             desc: "Iconic site of Canada's federal government, featuring grand architecture, historic sculptures, and expansive grounds.",
+                             icon: "flag.fill",
+                             color: .red,
+                             latitude: 45.4251,
+                             longitude: -75.6998,
+                             pictureURL: "https://www.acec.ca/images/Advocacy/05Parlim/HillGood.jpg")
     @State private var cameraPosition: MapCameraPosition = .automatic
     
     // Our items for Map and SnapCarousel
@@ -67,6 +72,7 @@ struct LandmarkView: View {
             }.frame(maxHeight: 100)
             
         }
+
         .navigationBarBackButtonHidden(true)
 
         .onChange(of: selectedPlace ?? defaultPlace) { oldValue, newValue in
@@ -129,7 +135,7 @@ struct LandmarkView: View {
                       color: .pink,
                       latitude: 45.425161,
                       longitude: -75.684183,
-                      pictureURL: "https://c8.alamy.com/comp/2BW110T/aqua-city-mall-with-odaiba-fuji-building-behind-on-a-sunny-day-tokyo-japan-2BW110T.jpg"),
+                      pictureURL: "https://www.uottawa.ca/about-us/sites/g/files/bhrskd336/files/styles/max_width_l_1470px/public/2021-08/20150821-RL-TABARET-MORNING-SUMMER-24.jpg?itok=6KCz4cUp"),
                 
             
                     Place(name: "Canadian War Museum",
