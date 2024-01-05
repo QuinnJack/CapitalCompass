@@ -2,20 +2,31 @@ import SwiftUI
 import MapKit
 
 struct ContentView: View {
-    @State private var cameraPosition: MapCameraPosition = .region(.userRegion)
+    @State private var cameraPosition: MKCoordinateRegion = .userRegion
     let buttons = [("house", "Home"), ("person", "Profile"), ("gear", "Settings"), ("questionmark.circle", "Help")]
     @State private var selectedButton = "Home"
-    
+    @State private var searchText = ""
+    @State private var results = [MKMapItem]()
+
     var body: some View {
         ZStack {
-            Map(position: $cameraPosition)
-                .mapControls {
-                    MapCompass()
-                    MapUserLocationButton()
+            Map(coordinateRegion: $cameraPosition)
+                .overlay(alignment: .top) {
+                    SearchView(searchText: $searchText, icon: .constant("magnifyingglass"), placeHolder: .constant("Search Ottawa"))
+                }
+                .onSubmit(of: .text) {
+                    Task {
+                        await searchPlaces()
+                    }
                 }
 
+            ForEach(results, id: \.self) { item in
+                let placemark = item.placemark
+                Marker(placemark.name ??  "", coordinate: placemark.coordinate)
+            }
+
             VStack {
-                Spacer() 
+                Spacer()
 
                 HStack(spacing: 0) {
                     ForEach(buttons, id: \.1) { (icon, title) in
@@ -36,10 +47,10 @@ struct ContentView: View {
                                     .bold()
                             }
                             .foregroundStyle(.white)
-                                .background(
-                                    RadialGradient.gradientDoneSteps
-                                )
-                            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 14, height: 14)))
+                            .background(
+                                RadialGradient(gradient: Gradient(colors: [.blue, .purple]), center: .center, startRadius: 20, endRadius: 100)
+                            )
+                            .clipShape(RoundedRectangle(cornerRadius: 14))
                             .shadow(color: .primary.opacity(0.7), radius: 2, x: 0, y: 2)
                             .scaleEffect(0.8)
                             .offset(y: 14)
@@ -47,26 +58,34 @@ struct ContentView: View {
                         .buttonStyle(PlainButtonStyle())
                     }
                 }
-                .background(Color.clear) // Ensuring the HStack has a clear background
+                .background(Color.clear)
             }
         }
     }
+
+    func searchPlaces() async {
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = searchText
+        request.region = .userRegion
+        let response = try? await MKLocalSearch(request: request).start()
+        self.results = response?.mapItems ?? []
+    }
 }
-
-
 
 extension CLLocationCoordinate2D {
     static var userLocation: CLLocationCoordinate2D {
-        return .init(latitude: 45.415, longitude: -75.6972)
-}
+        .init(latitude: 45.415, longitude: -75.6972)
+    }
 }
 
 extension MKCoordinateRegion {
     static var userRegion: MKCoordinateRegion {
-        return .init(center: .userLocation, latitudinalMeters: 5000, longitudinalMeters: 5000)
+        .init(center: .userLocation, latitudinalMeters: 5000, longitudinalMeters: 5000)
     }
 }
 
-#Preview{
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

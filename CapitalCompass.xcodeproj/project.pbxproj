@@ -15,6 +15,7 @@
 		E4D731F82B46A68100A479BB /* CapitalCompassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D731F72B46A68100A479BB /* CapitalCompassUITests.swift */; };
 		E4D731FA2B46A68100A479BB /* CapitalCompassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D731F92B46A68100A479BB /* CapitalCompassUITestsLaunchTests.swift */; };
 		E4D732072B47A44C00A479BB /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D732062B47A44C00A479BB /* Gradient.swift */; };
+		E4D732092B47D08400A479BB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D732082B47D08400A479BB /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E4D731F72B46A68100A479BB /* CapitalCompassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalCompassUITests.swift; sourceTree = "<group>"; };
 		E4D731F92B46A68100A479BB /* CapitalCompassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalCompassUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E4D732062B47A44C00A479BB /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		E4D732082B47D08400A479BB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				E4D731E12B46A68100A479BB /* CapitalCompass.entitlements */,
 				E4D731E22B46A68100A479BB /* Preview Content */,
 				E4D732062B47A44C00A479BB /* Gradient.swift */,
+				E4D732082B47D08400A479BB /* SearchView.swift */,
 			);
 			path = CapitalCompass;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D732092B47D08400A479BB /* SearchView.swift in Sources */,
 				E4D731DE2B46A67F00A479BB /* ContentView.swift in Sources */,
 				E4D731DC2B46A67F00A479BB /* CapitalCompassApp.swift in Sources */,
 				E4D732072B47A44C00A479BB /* Gradient.swift in Sources */,
