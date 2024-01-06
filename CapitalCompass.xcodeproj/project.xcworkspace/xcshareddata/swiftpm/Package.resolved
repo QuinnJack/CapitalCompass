@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "snappagercarousel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MaximeFILIPPI/SnapPagerCarousel",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1c8ba42c2bbb1b8013255e91cc6e47befa02119f"
+      }
+    }
+  ],
+  "version" : 2
+}
